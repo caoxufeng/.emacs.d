@@ -16,11 +16,11 @@
 (add-to-list 'load-path "~/.emacs.d/core/+lang")
 
 (require 'conf)
-(require 'orgs)
-(require 'lang)
-(require 'private)
+ (require 'orgs)
+ (require 'lang)
+;;(require 'private)
 (require 'tools)
-(require 'lang)
+;; (require 'lang)  
 
 ;; ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ;; 	Start server for emacsclient

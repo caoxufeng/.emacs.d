@@ -46,8 +46,8 @@
 (global-hl-line-mode nil)
 
 (fset 'yes-or-no-p 'y-or-n-p)
-(toggle-frame-fullscreen)
-;; (toggle-frame-maximized)
+;;(toggle-frame-fullscreen)
+(toggle-frame-maximized)
 
 ;; file edit settings
 (setq tab-width 4
@@ -104,9 +104,12 @@
 ;;	coding font for english and chinese
 ;; ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 (set-face-attribute 'default nil
-                    :family "Liga Source Code Pro"
+                    :family "Monaco"
 		    :height 160
                     :weight 'regular)
+
+(set-face-attribute 'mode-line nil :font "Menlo-13")
+
 
 (if (display-graphic-p)
     (dolist (charset '(kana han symbol cjk-misc bopomofo))

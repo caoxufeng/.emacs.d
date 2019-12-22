@@ -3,18 +3,18 @@
 ;; ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ;;; Code:
 
-(use-package doom-themes)
-(add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes"))
-(if (not (display-graphic-p))
-    (progn
-      (add-to-list 'load-path (expand-file-name "~/.emacs.d/themes"))
-      ;; (require 'doom-dracula-alt-theme)
-      (load-theme 'dracula)
-      ;; (load-theme 'spacemacs-light)
-      ;; (load-theme 'doom-solarized-dark)
-      )
-  ;; (load-theme 'dracula)
-  )
+;; (use-package doom-themes)
+;; (add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes"))
+;; (if (not (display-graphic-p))
+;;     (progn
+;;       (add-to-list 'load-path (expand-file-name "~/.emacs.d/themes"))
+;;       ;; (require 'doom-dracula-alt-theme)
+;;       (load-theme 'dracula)
+;;       ;; (load-theme 'spacemacs-light)
+;;       ;; (load-theme 'doom-solarized-dark)
+;;       )
+;;   ;; (load-theme 'dracula)
+;;   )
 
 ;; ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ;; pick faces function
@@ -79,9 +79,9 @@
 (set-face-background 'vertical-border (face-background 'default))
 (set-face-foreground 'vertical-border "grey")
 
-(use-package doom-modeline
-  :ensure t
-  :hook (after-init . doom-modeline-mode))
+;; (use-package doom-modeline
+;;   :ensure t
+;;   :hook (after-init . doom-modeline-mode))
 
 ;; FEATURE
 (set-face-background hl-line-face nil)
